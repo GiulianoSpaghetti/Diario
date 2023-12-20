@@ -52,6 +52,7 @@ namespace Diario
             foreach (Item item in query)
             {
                 item.testo=sstring.Text;
+                item.data = DateTime.Now;
                 con.Update(item);
             }
 
@@ -60,7 +61,7 @@ namespace Diario
         {
             Errore.Text = "";
             Item item = new Item();
-            item.data = new DateTime();
+            item.data = DateTime.Now;
             item.testo = sstring.Text;
             con.Insert(item);
             AggiornaEntita();
