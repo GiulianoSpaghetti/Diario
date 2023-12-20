@@ -1,7 +1,4 @@
-﻿using Microsoft.Maui.Controls.Internals;
-using Microsoft.UI.Composition.Interactions;
-using System;
-using System.Data.SQLite;
+﻿using System.Data.SQLite;
 
 namespace Diario
 {
