@@ -8,7 +8,7 @@
             Padding="30,0"
             Spacing="25">
 
-            <Picker x:Name="Dati"></Picker>
+            <Picker x:Name="Dati"  HorizontalOptions="Fill"/>
             <Entry
                 x:Name="sstring"
                 Text="" />
@@ -34,6 +34,13 @@
                 x:Name="Delete"
                 Text="Elimina" 
                 Clicked="EliminaClicked"
+                HorizontalOptions="Fill" />
+            <DatePicker x:Name="filtraPerData" 
+                         HorizontalOptions="Fill"/>
+            <Button
+                x:Name="Search"
+                Text="Cerca a partire dal" 
+                Clicked="FiltraPerClicked"
                 HorizontalOptions="Fill" />
 
         </VerticalStackLayout>

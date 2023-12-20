@@ -9,12 +9,14 @@ namespace Diario
         private static SQLiteConnection con;
         private static string s;
         private static int id;
-        private SQLite.TableQuery<Item> query;
+        private static SQLite.TableQuery<Item> query;
+        private static List<Item> elementi;
         public MainPage()
         {
             InitializeComponent();
             con = new SQLiteConnection(cs);
             con.CreateTable<Item>();
+            filtraPerData.Date = DateTime.Now;
             AggiornaEntita();
         }
 
@@ -55,6 +57,7 @@ namespace Diario
                 item.data = DateTime.Now;
                 con.Update(item);
             }
+            AggiornaEntita();
 
         }
         private void InserisciClicked(object sender, EventArgs e)
@@ -65,6 +68,11 @@ namespace Diario
             item.testo = sstring.Text;
             con.Insert(item);
             AggiornaEntita();
+        }
+
+        private void FiltraPerClicked(object sender, EventArgs e)
+        {
+            AggiornaEntita(filtraPerData.Date);
         }
         private void EliminaClicked(object sender, EventArgs e)
         {
@@ -94,10 +102,15 @@ namespace Diario
 
         }
 
-        private void AggiornaEntita()
+        private void AggiornaEntita(DateTime? data=null)
         {
             Dati.Items.Clear();
-            List<Item> elementi = con.Table<Item>().ToList();
+            if (data==null)
+                elementi=con.Table<Item>().ToList();
+            else {
+                query = con.Table<Item>().Where(v => v.data >= data);
+                elementi = query.ToList();
+            }
             if (elementi.Count > 0) {
                 foreach (Item elemento in elementi)
                     Dati.Items.Add($"{elemento.Id} - {elemento.data}");
