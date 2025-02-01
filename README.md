@@ -19,6 +19,8 @@ La differenza tra un database relazionale ed un database ad oggetti è che mysql
 Basta andare nella sezione release e scegliere l'msix che più piace.
 L'msix ha bisogno di un certificato, che va installato in "Computer locale" > "Persone attendibili"
 
+Prerequisiti: https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
+
 
 ## Aggiornamenti
 
@@ -37,6 +39,6 @@ Per cui su windows è meglio usare l'avalonia.
 <img width="1431" alt="2025-02-01 (8)" src="https://github.com/user-attachments/assets/7c15898a-a1b0-4869-a870-7d716e6384a2" />
 
 
-## Aggiornamenti
+# Donazioni
 
-Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
+http://numerone.altervista.org/donazioni.php
