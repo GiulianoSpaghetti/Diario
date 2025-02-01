@@ -8,13 +8,19 @@ Un diario in maui con sqlite integrato non crittato
 
 La differenza tra un database relazionale ed un database ad oggetti è che mysql consente di stabilire relazioni tra le entità (con l'id), mentre un database ad oggetti conserva solo l'oggetto.
 
-
-
 ## Come installare
 
 ## Su Android
 
 [![google](https://play.google.com/intl/it_it/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.altervista.numerone.diario)
+
+## Screenshotd
+
+![Screenshot 2025-02-01 232610](https://github.com/user-attachments/assets/36f901c7-a1ec-4705-a7a2-dbbbe26235ce)
+<img width="1431" alt="2025-02-01" src="https://github.com/user-attachments/assets/fe97628b-9a42-46a8-8a6d-65634cd8bf69" />
+<img width="1431" alt="2025-02-01 (9)" src="https://github.com/user-attachments/assets/f4013b37-5a1a-4774-b9d0-c429bae9091e" />
+<img width="1431" alt="2025-02-01 (8)" src="https://github.com/user-attachments/assets/7c15898a-a1b0-4869-a870-7d716e6384a2" />
+
 
 ## Aggiornamenti
 
