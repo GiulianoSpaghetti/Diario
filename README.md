@@ -14,6 +14,16 @@ La differenza tra un database relazionale ed un database ad oggetti è che mysql
 
 [![google](https://play.google.com/intl/it_it/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.altervista.numerone.diario)
 
+## Su windows
+
+Basta andare nella sezione release e scegliere l'msix che più piace.
+L'msix ha bisogno di un certificato, che va installato in "Computer locale" > "Persone attendibili"
+
+
+## Aggiornamenti
+
+Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
+
 ## Screenshotd
 
 ![Screenshot 2025-02-01 232610](https://github.com/user-attachments/assets/36f901c7-a1ec-4705-a7a2-dbbbe26235ce)
