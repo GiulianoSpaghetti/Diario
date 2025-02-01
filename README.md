@@ -24,6 +24,11 @@ L'msix ha bisogno di un certificato, che va installato in "Computer locale" > "P
 
 Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
 
+## Differenze tra il software maui ed il software avalonia
+
+Il maui ha bisogno di girare in una sandbox, invece avalonia gira coi permessi dell'utente.
+Per cui su windows è meglio usare l'avalonia.
+
 ## Screenshotd
 
 ![Screenshot 2025-02-01 232610](https://github.com/user-attachments/assets/36f901c7-a1ec-4705-a7a2-dbbbe26235ce)
