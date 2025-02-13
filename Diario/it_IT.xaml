@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"       
+             x:Class="Diario.it_IT">
+    <system:String x:Key="Home">Home</system:String>
+    <system:String x:Key="Informazioni">Informazioni</system:String>
+    <system:String x:Key="Leggi">Leggi il topic</system:String>
+    <system:String x:Key="Inserisci">Inserisci il topic</system:String>
+    <system:String x:Key="Modifica">Modifica il topic</system:String>
+    <system:String x:Key="Elimina">Eliminare il topic</system:String>
+    <system:String x:Key="Ricerca">Ricerca tutti i topic fatti dopo la data</system:String>
+    <system:String x:Key="RicercaEffettuata">Ricerca effettuata. Ci sono</system:String>
+    <system:String x:Key="elementi">topics</system:String>
+    <system:String x:Key="DatabaseVuoto">La base di dati è vuota</system:String>
+    <system:String x:Key="ImpossibileTrovareElementi">La ricerca non ha elementi</system:String>
+</ResourceDictionary>

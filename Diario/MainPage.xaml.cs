@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using CommunityToolkit.Maui.Alerts;
+using SQLite;
 using System.Runtime.Intrinsics.Arm;
 
 namespace Diario
@@ -14,6 +15,11 @@ namespace Diario
         public MainPage()
         {
             InitializeComponent();
+            Read.Text = App.d["Leggi"] as string;
+            Modify.Text = App.d["Modifica"] as string;
+            Insert.Text = App.d["Inserisci"] as string;
+            Delete.Text = App.d["Elimina"] as string;
+            Search.Text = App.d["Ricerca"] as string;
             con = new SQLiteConnection(cs);
             con.CreateTable<Item>();
             filtraPerData.Date = DateTime.Now;
@@ -22,13 +28,12 @@ namespace Diario
 
         private void LeggiClicked(object sender, EventArgs e)
         {
-            Errore.Text = "";
             try
             {
                 id = GetIdFromEntita();
             } catch (Exception ex)
             {
-                Errore.Text = ex.Message;
+                Avviso(ex.Message);
                 return;
             }
             query = con.Table<Item>().Where(v => v.Id.Equals(id));
@@ -40,14 +45,13 @@ namespace Diario
 
         private void ModificaClicked(object sender, EventArgs e)
         {
-            Errore.Text = "";
             try
             {
                 id = GetIdFromEntita();
             }
             catch (Exception ex)
             {
-                Errore.Text = ex.Message;
+                Avviso(ex.Message);
                 return;
             }
             query = con.Table<Item>().Where(v => v.Id.Equals(id));
@@ -62,7 +66,6 @@ namespace Diario
         }
         private void InserisciClicked(object sender, EventArgs e)
         {
-            Errore.Text = "";
             Item item = new Item();
             item.data = DateTime.Now;
             item.testo = sstring.Text;
@@ -76,14 +79,13 @@ namespace Diario
         }
         private void EliminaClicked(object sender, EventArgs e)
         {
-            Errore.Text = "";
             try
             {
                 id = GetIdFromEntita();
             }
             catch (Exception ex)
             {
-                Errore.Text = ex.Message;
+                Avviso(ex.Message);
                 return;
             }
             query = con.Table<Item>().Where(v => v.Id.Equals(id));
@@ -96,7 +98,7 @@ namespace Diario
         private int GetIdFromEntita()
         {
             if (Dati.Items.Count == 0)
-                throw new Exception("Database vuoto");
+                throw new Exception(App.d["DatabaseVuoto"] as string);
             s = Dati.SelectedItem.ToString();
             return Int32.Parse(s.Substring(0, s.IndexOf("-") - 1));
 
@@ -104,6 +106,7 @@ namespace Diario
 
         private void AggiornaEntita(DateTime? data=null)
         {
+            sstring.Text = "";
             Dati.Items.Clear();
             if (data==null)
                 elementi=con.Table<Item>().ToList();
@@ -111,11 +114,24 @@ namespace Diario
                 query = con.Table<Item>().Where(v => v.data >= data);
                 elementi = query.ToList();
             }
-            if (elementi.Count > 0) {
+            if (elementi.Count > 0)
+            {
                 foreach (Item elemento in elementi)
                     Dati.Items.Add($"{elemento.Id} - {elemento.data}");
                 Dati.SelectedIndex = 0;
             }
+            if (data != null)
+            {
+                if (elementi.Count > 0)
+                    Avviso($"{App.d["RicercaEffettuata"]} {elementi.Count} {App.d["elementi"]}.");
+                else
+                    Avviso($"{App.d["ImpossibileTrovareElementi"]}");
+            }
+            Dati.IsEnabled = elementi.Count>0;
+        }
+        private async void Avviso(String s)
+        {
+            await Snackbar.Make(s).Show(App.cancellationTokenSource.Token);
         }
 
     }

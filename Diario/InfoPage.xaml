@@ -5,15 +5,19 @@
              Title="Informazioni">
     <VerticalStackLayout>
         <Label 
-            Text="Diario versione 0.1"
+            Text="Diario versione 0.5"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Label 
-            Text="ⓒ Giulio Sorrentino 2023 some right reserved"
+            Text="This app is under GPL v3 or, at your opinion, any later version"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Label 
-           Text="Una app di diario che si basa sul maio e su sqlite interno non crittato"
+            Text="ⓒ Giulio Sorrentino 2023-2025 some right reserved"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+           Text="Una app di diario che si basa sul maui e su sqlite interno (linq) non crittato"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
     </VerticalStackLayout>

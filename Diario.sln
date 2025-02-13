@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.8.34330.188
+VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diario", "Diario\Diario.csproj", "{301BF663-A4AF-4F88-B00A-744B555748EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diario", "Diario\Diario.csproj", "{987173C5-AFE1-4F8C-B149-1401296A5FB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{301BF663-A4AF-4F88-B00A-744B555748EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{301BF663-A4AF-4F88-B00A-744B555748EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{301BF663-A4AF-4F88-B00A-744B555748EF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{301BF663-A4AF-4F88-B00A-744B555748EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{301BF663-A4AF-4F88-B00A-744B555748EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{301BF663-A4AF-4F88-B00A-744B555748EF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{987173C5-AFE1-4F8C-B149-1401296A5FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987173C5-AFE1-4F8C-B149-1401296A5FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987173C5-AFE1-4F8C-B149-1401296A5FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987173C5-AFE1-4F8C-B149-1401296A5FB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FF45C880-EAB5-4A56-8E8C-542A160D1E40}
 	EndGlobalSection
 EndGlobal

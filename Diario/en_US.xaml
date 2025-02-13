@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             x:Class="Diario.en_US">
+    <system:String x:Key="Home">Home</system:String>
+    <system:String x:Key="Informazioni">Informations</system:String>
+    <system:String x:Key="Leggi">Read topic</system:String>
+    <system:String x:Key="Inserisci">Insert topic</system:String>
+    <system:String x:Key="Modifica">Modify Topic</system:String>
+    <system:String x:Key="Elimina">Delete Topic</system:String>
+    <system:String x:Key="Ricerca">Find all topics inserted after the date</system:String>
+    <system:String x:Key="RicercaEffettuata">The search has been made. There are</system:String>
+    <system:String x:Key="elementi">topics</system:String>
+    <system:String x:Key="DatabaseVuoto">Database is empty</system:String>
+    <system:String x:Key="ImpossibileTrovareElementi">The search has no topics</system:String>
+</ResourceDictionary>

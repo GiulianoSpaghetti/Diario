@@ -8,11 +8,11 @@
     Title="Diario">
 
     <ShellContent
-        Title="Home"
+        x:Name="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <ShellContent
-            Title="Informazioni"
+            x:Name="Informazioni"
             ContentTemplate="{DataTemplate local:InfoPage}"
             Route="InfoPage" />
 

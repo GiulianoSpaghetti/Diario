@@ -12,34 +12,26 @@
             <Entry
                 x:Name="sstring"
                 Text="" />
-            <Label
-                x:Name="Errore"
-                TextColor="red" />
             <Button
                 x:Name="Read"
-                Text="Leggi" 
                 Clicked="LeggiClicked"
                 HorizontalOptions="Fill" />
             <Button
                 x:Name="Modify"
-                Text="Modifica" 
                 Clicked="ModificaClicked"
                 HorizontalOptions="Fill" />
             <Button
                 x:Name="Insert"
-                Text="Inserisci" 
                 Clicked="InserisciClicked"
                 HorizontalOptions="Fill" />
             <Button
                 x:Name="Delete"
-                Text="Elimina" 
                 Clicked="EliminaClicked"
                 HorizontalOptions="Fill" />
             <DatePicker x:Name="filtraPerData" 
                          HorizontalOptions="Fill"/>
             <Button
-                x:Name="Search"
-                Text="Cerca a partire dal" 
+                x:Name="Search" 
                 Clicked="FiltraPerClicked"
                 HorizontalOptions="Fill" />
 
