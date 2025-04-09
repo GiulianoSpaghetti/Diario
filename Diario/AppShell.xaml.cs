@@ -6,6 +6,7 @@
         {
             InitializeComponent();
             Home.Title = App.d["Home"] as string;
+            Search.Title = App.d["Cerca"] as string;
             Informazioni.Title = App.d["Informazioni"] as string;
         }
     }

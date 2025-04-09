@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              x:Class="Diario.fr_FR">
-    <system:String x:Key="Home">Domicile</system:String>
+    <system:String x:Key="Home">Mon propre journal</system:String>
+    <system:String x:Key="Cerca">Recherche</system:String>
     <system:String x:Key="Informazioni">Informations</system:String>
     <system:String x:Key="Leggi">Lire le sujet</system:String>
     <system:String x:Key="Inserisci">Insérer un sujes</system:String>

@@ -12,6 +12,10 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <ShellContent
+        x:Name="Search"
+        ContentTemplate="{DataTemplate local:SearchPage}"
+        Route="SearchPage" />
+    <ShellContent
             x:Name="Informazioni"
             ContentTemplate="{DataTemplate local:InfoPage}"
             Route="InfoPage" />

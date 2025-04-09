@@ -28,12 +28,6 @@
                 x:Name="Delete"
                 Clicked="EliminaClicked"
                 HorizontalOptions="Fill" />
-            <DatePicker x:Name="filtraPerData" 
-                         HorizontalOptions="Fill"/>
-            <Button
-                x:Name="Search" 
-                Clicked="FiltraPerClicked"
-                HorizontalOptions="Fill" />
 
         </VerticalStackLayout>
     </ScrollView>

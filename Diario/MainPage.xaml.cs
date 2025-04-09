@@ -12,6 +12,7 @@ namespace Diario
         private static int id;
         private static SQLite.TableQuery<Item> query;
         private static List<Item> elementi;
+        public static MainPage Instance = null;
         public MainPage()
         {
             InitializeComponent();
@@ -19,11 +20,12 @@ namespace Diario
             Modify.Text = App.d["Modifica"] as string;
             Insert.Text = App.d["Inserisci"] as string;
             Delete.Text = App.d["Elimina"] as string;
-            Search.Text = App.d["Ricerca"] as string;
+            Title = App.d["Home"] as string;
             con = new SQLiteConnection(cs);
             con.CreateTable<Item>();
-            filtraPerData.Date = DateTime.Now;
             AggiornaEntita();
+            if (Instance == null)
+                Instance = this;
         }
 
         private void LeggiClicked(object sender, EventArgs e)
@@ -72,11 +74,6 @@ namespace Diario
             con.Insert(item);
             AggiornaEntita();
         }
-
-        private void FiltraPerClicked(object sender, EventArgs e)
-        {
-            AggiornaEntita(filtraPerData.Date);
-        }
         private void EliminaClicked(object sender, EventArgs e)
         {
             try
@@ -104,7 +101,7 @@ namespace Diario
 
         }
 
-        private void AggiornaEntita(DateTime? data=null)
+        public void AggiornaEntita(DateTime? data=null)
         {
             sstring.Text = "";
             Dati.Items.Clear();
