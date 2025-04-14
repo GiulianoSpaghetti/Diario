@@ -12,7 +12,7 @@ public partial class SearchPage : ContentPage
 
     private void FiltraPerClicked(object sender, EventArgs e)
     {
-        MainPage.Instance.AggiornaEntita(filtraPerData.Date);
+        MainPage.MainPageInstance.AggiornaEntita(filtraPerData.Date);
         Shell.Current.GoToAsync("//MainPage");
     }
 }

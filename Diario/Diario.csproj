@@ -47,7 +47,7 @@
 		<AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
 		<GenerateTestArtifacts>True</GenerateTestArtifacts>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
-		<AppInstallerUri>https://github.com/GiulianoSpaghetti/Diario/releases/download/0.6/Diario_amd64.msix</AppInstallerUri>
+		<AppInstallerUri>https://github.com/GiulianoSpaghetti/Diario/releases/download/0.6/Diario_arm64.msix</AppInstallerUri>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -69,7 +69,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="11.2.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.50" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.60" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.4" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.4" />

@@ -12,7 +12,8 @@ namespace Diario
         private static int id;
         private static SQLite.TableQuery<Item> query;
         private static List<Item> elementi;
-        public static MainPage Instance = null;
+        private static MainPage Instance = null;
+        public static MainPage MainPageInstance { get => Instance; }
         public MainPage()
         {
             InitializeComponent();
