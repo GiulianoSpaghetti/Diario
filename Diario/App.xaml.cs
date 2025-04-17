@@ -4,20 +4,19 @@ namespace Diario
 {
     public partial class App : Application
     {
-        private static ResourceDictionary dic;
-        public static ResourceDictionary d { get => dic; }
+        public static ResourceDictionary Dictionary { get; private set; }
         public static readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
         public App()
         {
             InitializeComponent();
             try
             {
-                dic = Resources[CultureInfo.CurrentCulture.TwoLetterISOLanguageName] as ResourceDictionary;
+                Dictionary = Resources[CultureInfo.CurrentCulture.TwoLetterISOLanguageName] as ResourceDictionary;
 
             }
             catch (Exception ex)
             {
-                dic = Resources["en"] as ResourceDictionary;
+                Dictionary = Resources["en"] as ResourceDictionary;
             }
         }
 

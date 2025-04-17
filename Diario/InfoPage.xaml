@@ -19,5 +19,10 @@
            Text="Una app di diario che si basa sul maui e su sqlite interno (linq) non crittato"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
+        <Button 
+         Text="Ulteriori Informazioni"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center"
+         Clicked="OnSito_Click"/>
     </VerticalStackLayout>
 </ContentPage>

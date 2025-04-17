@@ -12,21 +12,19 @@ namespace Diario
         private static int id;
         private static SQLite.TableQuery<Item> query;
         private static List<Item> elementi;
-        private static MainPage Instance = null;
-        public static MainPage MainPageInstance { get => Instance; }
+        public static MainPage MainPageInstance { get; private set; }
         public MainPage()
         {
             InitializeComponent();
-            Read.Text = App.d["Leggi"] as string;
-            Modify.Text = App.d["Modifica"] as string;
-            Insert.Text = App.d["Inserisci"] as string;
-            Delete.Text = App.d["Elimina"] as string;
-            Title = App.d["Home"] as string;
+            Read.Text = App.Dictionary["Leggi"] as string;
+            Modify.Text = App.Dictionary["Modifica"] as string;
+            Insert.Text = App.Dictionary["Inserisci"] as string;
+            Delete.Text = App.Dictionary["Elimina"] as string;
+            Title = App.Dictionary["Home"] as string;
             con = new SQLiteConnection(cs);
             con.CreateTable<Item>();
             AggiornaEntita();
-            if (Instance == null)
-                Instance = this;
+            MainPageInstance = this;
         }
 
         private void LeggiClicked(object sender, EventArgs e)
@@ -96,7 +94,7 @@ namespace Diario
         private int GetIdFromEntita()
         {
             if (Dati.Items.Count == 0)
-                throw new Exception(App.d["DatabaseVuoto"] as string);
+                throw new Exception(App.Dictionary["DatabaseVuoto"] as string);
             s = Dati.SelectedItem.ToString();
             return Int32.Parse(s.Substring(0, s.IndexOf("-") - 1));
 
@@ -121,9 +119,9 @@ namespace Diario
             if (data != null)
             {
                 if (elementi.Count > 0)
-                    Avviso($"{App.d["RicercaEffettuata"]} {elementi.Count} {App.d["elementi"]}.");
+                    Avviso($"{App.Dictionary["RicercaEffettuata"]} {elementi.Count} {App.Dictionary["elementi"]}.");
                 else
-                    Avviso($"{App.d["ImpossibileTrovareElementi"]}");
+                    Avviso($"{App.Dictionary["ImpossibileTrovareElementi"]}");
             }
             Dati.IsEnabled = elementi.Count>0;
         }

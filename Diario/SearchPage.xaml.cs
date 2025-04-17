@@ -6,8 +6,8 @@ public partial class SearchPage : ContentPage
 	{
 		InitializeComponent();
         filtraPerData.Date = DateTime.Now;
-        Search.Text = App.d["Ricerca"] as string;
-        Title = App.d["Cerca"] as string;
+        Search.Text = App.Dictionary["Ricerca"] as string;
+        Title = App.Dictionary["Cerca"] as string;
     }
 
     private void FiltraPerClicked(object sender, EventArgs e)

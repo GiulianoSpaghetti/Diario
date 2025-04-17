@@ -5,9 +5,9 @@
         public AppShell()
         {
             InitializeComponent();
-            Home.Title = App.d["Home"] as string;
-            Search.Title = App.d["Cerca"] as string;
-            Informazioni.Title = App.d["Informazioni"] as string;
+            Home.Title = App.Dictionary["Home"] as string;
+            Search.Title = App.Dictionary["Cerca"] as string;
+            Informazioni.Title = App.Dictionary["Informazioni"] as string;
         }
     }
 }
