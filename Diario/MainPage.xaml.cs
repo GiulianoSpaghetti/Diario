@@ -6,12 +6,12 @@ namespace Diario
 {
     public partial class MainPage : ContentPage
     {
-        private static string cs = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "test.db");
-        private static SQLiteConnection con;
-        private static string s;
-        private static int id;
-        private static SQLite.TableQuery<Item> query;
-        private static List<Item> elementi;
+        private string cs = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "test.db");
+        private SQLiteConnection con;
+        private string s;
+        private int id;
+        private SQLite.TableQuery<Item> query;
+        private List<Item> elementi;
         public static MainPage MainPageInstance { get; private set; }
         public MainPage()
         {

@@ -3,7 +3,7 @@ namespace Diario;
 public partial class InfoPage : ContentPage
 {
 
-	public static readonly Uri uri = new Uri("https://github.com/giulianospaghetti/diario");
+	public readonly Uri uri = new Uri("https://github.com/giulianospaghetti/diario");
 	public InfoPage()
 	{
 		InitializeComponent();

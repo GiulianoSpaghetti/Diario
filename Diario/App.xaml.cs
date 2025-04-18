@@ -4,7 +4,7 @@ namespace Diario
 {
     public partial class App : Application
     {
-        public static ResourceDictionary Dictionary { get; private set; }
+        public static ResourceDictionary Dictionary { get; init; }
         public static readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
         public App()
         {
