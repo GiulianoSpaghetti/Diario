@@ -4,10 +4,11 @@ namespace Diario
 {
     public partial class App : Application
     {
-        public static ResourceDictionary Dictionary { get; init; }
+        public static ResourceDictionary Dictionary { get; private set; }
         public static readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
         public App()
         {
+            SQLitePCL.Batteries_V2.Init();
             InitializeComponent();
             try
             {
