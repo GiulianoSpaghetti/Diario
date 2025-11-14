@@ -34,7 +34,7 @@ Per windows i package msix sono platform indepedent ed in IL, per cui è suffici
 Il maui ha bisogno di girare in una sandbox, invece avalonia gira coi permessi dell'utente.
 Per cui su windows è meglio usare l'avalonia.
 
-## Screenshotd
+## Screenshot
 
 ![Screenshot 2025-02-01 232610](https://github.com/user-attachments/assets/36f901c7-a1ec-4705-a7a2-dbbbe26235ce)
 <img width="1431" alt="2025-02-01" src="https://github.com/user-attachments/assets/fe97628b-9a42-46a8-8a6d-65634cd8bf69" />
