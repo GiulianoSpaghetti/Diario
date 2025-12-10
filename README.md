@@ -27,7 +27,7 @@ Oppure 9 o o 8 a seconda di quello che scegliete. E' consigliabile avere l'appru
 
 ## Aggiornamenti
 
-Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
+Per windows i package msix sono platform indepedent ed in IL, ma sono in dotnet 9 e 10, pr cui è necessario ricompilare per evitare di avere il sistema spurio in caso di nuovo dotnet framework che comunque è necessario per l'avvio del software, che se aggiornato dovrebbe impeire lo shock sulle ventolee.
 
 ## Differenze tra il software maui ed il software avalonia
 
