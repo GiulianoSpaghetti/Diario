@@ -12,7 +12,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Label 
-            Text="ⓒ Giulio Sorrentino 2023-2025 some right reserved"
+            Text="ⓒ Giulio Sorrentino 2023-2026 some right reserved"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Label 
