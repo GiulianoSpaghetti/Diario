@@ -21,9 +21,9 @@ L'msix ha bisogno di un certificato, che va installato in "Computer locale" > "P
 
 Prerequisiti:
 
-https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.10
-
-Oppure 9 o o 8 a seconda di quello che scegliete. E' consigliabile avere l'appruntime 1.8 installato sul computer (https://winstall.app/apps/Microsoft.WindowsAppRuntime.1.8), anche se si utilizza il desktop runtime 9 o 10. Tutto da provare...
+    unigetui://DesktopRuntime
+    
+installare il windows desktopruntime 10 oppure 9 o o 8 a seconda di quello che scegliete. 
 
 ## Aggiornamenti
 
