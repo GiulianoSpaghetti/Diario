@@ -7,15 +7,14 @@
             Text="Diario versione 0.6"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Label 
-            Text="This app is under GPL v3 or, at your opinion, any later version"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Label 
-            Text="ⓒ Giulio Sorrentino 2023-2026 some right reserved"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Label 
+      <Label 
+         Text="This app is under MIT License. Is furbished the reselling."
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" />
+     <Label 
+         Text="ⓒ Giulio Sorrentino 2023-2026 all right reserved"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" />
            Text="Una app di diario che si basa sul maui e su sqlite interno (linq) non crittato"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
