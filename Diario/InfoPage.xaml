@@ -15,6 +15,7 @@
          Text="ⓒ Giulio Sorrentino 2023-2026 all right reserved"
          VerticalOptions="Center" 
          HorizontalOptions="Center" />
+        <Label 
            Text="Una app di diario che si basa sul maui e su sqlite interno (linq) non crittato"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
