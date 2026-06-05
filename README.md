@@ -44,4 +44,5 @@ Per cui su windows è meglio usare l'avalonia.
 
 # Donazioni
 
+
 http://numerone.altervista.org/donazioni.php
