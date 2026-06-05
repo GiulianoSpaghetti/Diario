@@ -1,3 +1,5 @@
+[![.NET MAUI Build](https://github.com/GiulianoSpaghetti/Diario/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/GiulianoSpaghetti/Diario/actions/workflows/dotnet-desktop.yml)
+
 🇮🇹 Made in Italy. Il primo prodotto maui ad utilizzare linq su maui nel mondo.
 ![Napoli-Logo](https://github.com/user-attachments/assets/ffa0d95d-2ee4-43e7-b644-d18baa1c0ed0)
 ![made in parco grifeo](https://github.com/user-attachments/assets/28cd34ca-a02d-47a4-8738-bde56b0f3b13)
