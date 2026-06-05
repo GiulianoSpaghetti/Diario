@@ -4,17 +4,17 @@
              x:Class="Diario.InfoPage">
     <VerticalStackLayout>
         <Label 
-            Text="Diario versione 0.6"
+            Text="Diario versione 0.7"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-      <Label 
-         Text="This app is under MIT License. Is furbished the reselling."
-         VerticalOptions="Center" 
-         HorizontalOptions="Center" />
-     <Label 
-         Text="ⓒ Giulio Sorrentino 2023-2026 all right reserved"
-         VerticalOptions="Center" 
-         HorizontalOptions="Center" />
+        <Label 
+            Text="This app is under MIT: reselling is furbished."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="ⓒ Giulio Sorrentino 2023-2026 all right reserved"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
         <Label 
            Text="Una app di diario che si basa sul maui e su sqlite interno (linq) non crittato"
            VerticalOptions="Center" 

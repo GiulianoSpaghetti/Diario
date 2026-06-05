@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package
-    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-    xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
     xmlns:com="http://schemas.microsoft.com/appx/manifest/com/windows10"
     xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
-    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-    IgnorableNamespaces="uap rescap com desktop">
-  <Identity Name="maui-package-name-placeholder" Publisher="CN=Giulio Sorrentino, O=numeronesoft, C=IT" Version="0.6.2.0" />
+  IgnorableNamespaces="uap rescap com desktop">
 
-  <mp:PhoneIdentity PhoneProductId="0B30ED77-7ADC-448D-BA4F-2ABFFB134B84" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <Identity Name="maui-package-name-placeholder" Publisher="CN=Giulio Sorrentino, O=numeronesoft, C=IT" Version="0.7.14.0" />
+
+  <mp:PhoneIdentity PhoneProductId="D49B5499-4C10-48AD-AC25-9B34927EC8A5" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>$placeholder$</DisplayName>
+    <DisplayName>Diario</DisplayName>
     <PublisherDisplayName>Giulio Sorrentino</PublisherDisplayName>
     <Logo>$placeholder$.png</Logo>
   </Properties>
@@ -46,12 +47,10 @@
 			<com:Extension Category="windows.comServer">
 				<com:ComServer>
 					<com:ExeServer Executable="Diario\Diario.exe" DisplayName="$targetnametoken$" Arguments="----AppNotificationActivated:">
-						<!-- Example path to executable: CommunityToolkit.Maui.Sample\CommunityToolkit.Maui.Sample.exe -->
 						<com:Class Id="6e919706-2634-4d97-a93c-2213b2acc334" />
 					</com:ExeServer>
 				</com:ComServer>
 			</com:Extension>
-
 		</Extensions>
     </Application>
   </Applications>
