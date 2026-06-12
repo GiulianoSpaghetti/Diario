@@ -8,7 +8,7 @@
     xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
   IgnorableNamespaces="uap rescap com desktop">
 
-  <Identity Name="maui-package-name-placeholder" Publisher="CN=Giulio Sorrentino, O=numeronesoft, C=IT" Version="0.7.16.0" />
+  <Identity Name="maui-package-name-placeholder" Publisher="CN=Giulio Sorrentino, O=numeronesoft, C=IT" Version="0.7.17.0" />
 
   <mp:PhoneIdentity PhoneProductId="D49B5499-4C10-48AD-AC25-9B34927EC8A5" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
