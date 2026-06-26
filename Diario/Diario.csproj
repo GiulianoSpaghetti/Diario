@@ -74,8 +74,8 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="10.0.9" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="14.2.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.71" />
-		<PackageReference Include="Microsoft.Maui.Essentials" Version="10.0.71" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.80" />
+		<PackageReference Include="SourceGear.sqlite3" Version="3.50.4.5" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.11" />
 		<PackageReference Include="SQLitePCLRaw.core" Version="3.0.3" />
@@ -85,7 +85,7 @@
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-windows10.0.26100.0'">
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.28000.1839" />
-		<PackageReference Include="Microsoft.Windows.SDK.BuildTools.MSIX" Version="1.7.260518100">
+		<PackageReference Include="Microsoft.Windows.SDK.BuildTools.MSIX" Version="1.7.260610101">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
