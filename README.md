@@ -4,6 +4,9 @@
 ![Napoli-Logo](https://github.com/user-attachments/assets/ffa0d95d-2ee4-43e7-b644-d18baa1c0ed0)
 ![made in parco grifeo](https://github.com/user-attachments/assets/28cd34ca-a02d-47a4-8738-bde56b0f3b13)
 
+# ATTENZIONE
+Il programma si deve evolvere con le collectionview. Ho fatto evolvere il diario.material con la visione a la "collectionnview" e non vedo necessità di avere doppioni, per cui il programma è dichiarato legacy e su android sarà sostituito dalla versione in material di google di avalonia. 
+
 ## Diario
 
 Un diario in maui con sqlite integrato non crittato
